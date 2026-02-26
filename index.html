@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    a
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="container"></div>
+<script src="script.js">
+ const container = document.getElementById('container');
+  const totalDivs = 9; // 3x3
+  const colunas = 3;
+
+  for (let i = 0; i < totalDivs; i++) {
+    const div = document.createElement('div');
+    div.className = 'item';
+    div.innerText = i + 1;
+    
+    // Cálculo da largura proporcional (subtraindo o gap)
+    div.style.width = `calc(100% / ${colunas} - 10px)`;
+    
+    container.appendChild(div);
+  }
+    </script>
+</body>
+</html>

@@ -18,3 +18,11 @@
   align-items: center;
   font-size: 20px;
 }
+
+/* .item:hover{
+  background: rgb(37, 84, 122);
+} */
+
+.itemn{
+  background: rgb(37, 84, 122);
+}
